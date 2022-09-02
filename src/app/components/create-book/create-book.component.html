@@ -1,0 +1,39 @@
+<div class="card" style="width: 80rem;">
+
+    <div class="card-body">
+
+        <h5 class="card-title">Create Book</h5>
+        <br/>
+        <div class="row">
+            <div class="col">
+                <span>Book Name:</span>
+              <input type="text" class="form-control"
+              [(ngModel)] = "bookAuthor.title"
+              placeholder="Book Name" aria-label="Book Name">
+            </div>
+            <div class="col">
+                <span>Book Cost:</span>
+              <input type="text" 
+              [(ngModel)] = "bookAuthor.price"
+              class="form-control" placeholder="Book Cost" aria-label="Book Cost">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col">
+                <span>Book Author:</span>
+              <input type="text" class="form-control"
+              [(ngModel)] = "bookAuthor.pulisher" placeholder="Book Author" aria-label="Book Author">
+            </div>
+            <div class="col">
+                <span>Book Content:</span>
+              <input type="text"  class="form-control" placeholder="Book Title"
+              [(ngModel)] = "bookAuthor.content"
+               aria-label="Book Title">
+            </div>
+          </div>
+          <div class="col-12">
+            <br/>
+            <button type="submit" class="btn btn-primary"   (click)="save()">Submit</button>
+          </div>
+    </div>
+</div>
